@@ -15,3 +15,7 @@
 
 Dockerfile
 Dockerfile.multi-stage
+.idea
+.gitignore
+docker-compose.yaml
+build-multi-stage.sh
