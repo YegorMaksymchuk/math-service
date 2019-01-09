@@ -1,6 +1,6 @@
 FROM golang:latest as build-container
 WORKDIR /go/src/app
-COPY .. .
+COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o web .
 
 FROM alpine:latest

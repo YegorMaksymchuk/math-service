@@ -1,4 +1,4 @@
-package mathservice
+package main
 
 import (
 	"encoding/json"
@@ -17,15 +17,15 @@ func main() {
 }
 
 func generateQuestions(amount int) Questions {
-	questions := make(Questions, amount);
+	questions := make(Questions, amount)
 	for i := 0; i < amount; i++ {
-		b := rand.Intn(10);
-		a := rand.Intn(10);
+		b := rand.Intn(10)
+		a := rand.Intn(10)
 		singleQuestion := Question{fmt.Sprintf("%d+%d=?", a, b), fmt.Sprintf("%d", a+b)}
-		questions = append(questions[:i], singleQuestion);
+		questions = append(questions[:i], singleQuestion)
 	}
 
-	return questions;
+	return questions
 }
 
 type Question struct {
