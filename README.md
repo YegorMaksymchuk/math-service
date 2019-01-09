@@ -1,13 +1,13 @@
-#Simple math service
+# Simple math service
 
-##How to run
+## How to run
 * git clone https://github.com/YegorMaksymchuk/mathservice.git
 * cd mathservice
 * docker compose up --build 
- ###or
+ ### or
  * sh build-multi-stage.sh
  
- ###Make a test
+ ### Make a test
  * curl -X GET http://localhost:6000/math?amount=2
  
  ### You will see something like:
