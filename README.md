@@ -9,8 +9,7 @@
  
  ###Make a test
  * curl -X GET http://localhost:6000/math?amount=2
- 
- ### You will see something like:
+``` json 
  [
    {
      "question": "7+3=?",
@@ -21,3 +20,4 @@
      "answer": "12"
    }
  ]
+```
